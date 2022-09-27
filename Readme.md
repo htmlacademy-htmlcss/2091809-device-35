@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Sergey Loskot](https://up.htmlacademy.ru/htmlcss/35/user/2091809).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
