@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Купить Моноподы для селфи - Девайс</title>
+  </head>
+
+  <body>
+                                                                                              <!--Шапка сайта -НЕ ЗНАЮ ИЛИ ПРАВИЛЬНО РАЗДЕЛИЛ ЛОГИЧЕСКИ ШАПКУ НА 4 ЧАСТИ (Логотип, Поиск, Сервисное и Главное меню). ГЛАВНОЕ МЕНЮ САЙТА, ВСВОЮ ОЧЕРЕДЬ, РАЗДЕЛИЛ ТАКЖЕ НА 2 ВИДА (Меню каталога и Дополнительное меню) -->
+    <header class="page-header">
+        <!--1. ЛОГОТИП-->
+          <a class="navigation-logo" href="index.html">
+            <img class="logo-header" src="#" alt="Логотип Девайс">
+          </a>
+
+        <!--2. ПОИСК ПО САЙТУ-->
+        <form action="#" method="get">
+          <input class="search-form" type="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+
+        <!--3. СЕРВИСНОЕ МЕНЮ-->
+        Сервисное меню
+        <nav class="service-menu">                                                              <!--Это первый тег nav. Возможно надо было все внутри тега header обернуть в nav. Не знаю или можно создавать 2 тега nav, отдельно под каждое меню (Главное и сервисное)  -->
+          <ul class="service-menu-list">
+            <li class="service-menu-item">
+              <a class="service-menu-item-link" href="#'">Личный кабинет</a>
+            </li>
+            <li class="service-menu-item">
+              <a class="service-menu-item-link" href="#'">Сравнение товаров</a>
+            </li>
+            <li class="service-menu-item">
+              <a class="service-menu-item-link" href="#'">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--4. ГЛАВНОЕ МЕНЮ-->
+        <nav class="main-menu">                                                                  <!--Это втотой тег nav - Уже для навигации по Главному меню. Вохможно надо было все обернуть в тег nav, как писал в пред. комменте-->
+          Главное меню
+          <div>                                                                                  <!--Возможно лишний DIV???-->
+            <ul class="main-menu-list">
+              <!--Меню Каталога продукции-->
+              <li class="main-menu-item">
+                <a class="main-menu-item-link" href="#">Каталог продукции</a>
+
+                <ul class="catalog-menu">                                                       <!--Не знаю, вкладывать данный перечень Разделов Каталога продукции в данный li("Каталог продукции"), или выносить отдельно???-->
+                  <li class="catalog-menu-item">
+                   <a class="catalog-menu-item-link" href="#'">Виртуальная реальность</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-item-link">Моноподы для селфи</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-item-link" href="#'">Экшн-камеры</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-item-link" href="#'">Фитнес-браслеты</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-item-link" href="#'">Умные часы</a>
+                  </li>
+                  <li class="catalog-menu-item">
+                    <a class="catalog-menu-item-link" href="#'">Квадрокоптеры</a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <!--Главном меню - НЕ КАТАЛОГ-->
+              <li class="main-menu-item">
+                <a class="main-menu-item-link" href="#'">Доставка</a>
+              </li>
+              <li class="main-menu-item">
+                <a class="main-menu-item-link" href="#'">Гарантия</a>
+              </li>
+              <li class="main-menu-item">
+                <a class="main-menu-item-link" href="#'">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <main class="main-inner">
+      <!--Шапка самого каталога-->
+      <header class="inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="#">Каталог продукции</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Моноподы для селфи</a>
+            </li>
+        </ul>
+      </header>
+
+      <!--Фильтр в левом боковом меню + Сортировка-->
+      <section class="left-sitebar">
+
+        <h2>Фильтр:</h2>
+        <form class="catalog-filter" > <!--Шторка с Ценой-->
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <label>
+                    от 0<input type="range" name="price" min="0" max="8000" step="1" value="5000">до 8000
+                </label>
+
+            </fieldset>
+
+            <fieldset class="catalog-filter-group"> <!--Чекбокс с цветом-->
+                <legend class="catalog-filter-title">Цвет</legend>
+                <ul>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" checked name="black">Черный
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" checked name="white">Белый
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="blue">Синий
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="red">Красный
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="checkbox" name="pink">Розовый
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="catalog-filter-group"> <!--Рабиобатн с Bluetooth-->
+                <legend class="catalog-filter-title">Bluetooth</legend>
+                <ul>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="radio" name="bluetooth" checked value="yes">Есть
+                        </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <label class="control">
+                            <input class="control-input" type="radio" name="bluetooth" value="yes" >Нет
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+        </form>
+
+
+        <h2>Сортировка:</h2>
+        <select class="selext-control" aria-label="Сортировка по типу свойства товара">
+            <option value="popular">Популярные</option>
+        </select>
+
+                                                                              <!--!!!! НЕ ЗНАЮ КАК РАЗМЕТИТЬ ЭТОТ ЭЛЕМЕНТ - https://prnt.sc/eflSW-u1bP9g (По Возрастанию-По Убыванию). Разметил как и предыдущий элемент сортировки-->
+        <select class="selext-control" aria-label="Сортировка по возрастанию и убыванию">
+            <option value="sort-ascending">По возрастинию</option>
+            <option value="descending-sort">По убыванию</option>
+        </select>
+      </section>
+
+      <!--Карточки товаров-->
+      <section class="pruduct-all-cards">
+        <h2 class="visually-hidden">Перечень товаров</h2>
+        <ul class="product-list">
+            <li class="product-card">
+                <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="#" alt="Любительская селфи-палка">
+                    <h3 class="product-card-title">Любительская селфи-палка</h3>
+                    <span class="product-card-price">500 &#x584;</span>
+                </a>
+            </li>
+
+            <li class="product-card">
+                <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="#" alt="Профессиональная селфи-палка ">
+                    <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+                    <span class="product-card-price">1500 &#x584;</span>
+                </a>
+            </li>
+
+            <li class="product-card">
+                <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="#" alt="Непотопляемая селфи-палка">
+                    <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                    <span class="product-card-price">2500 &#x584;</span>
+                </a>
+            </li>
+
+            <li class="product-card">
+                <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной»">
+                    <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                    <span class="product-card-price">1500 &#x584;</span>
+                </a>
+            </li>
+        </ul>
+      </section>
+
+
+      <!--Пагинация-->
+      <section class="pagination-area">
+        <h2 class="visually-hidden">Пагинация</h2>
+        <button class="button-download-more" type="button">Загрузить еще</button>
+        <ul class="pagination">
+            <li class="pagination-item">
+                <a class="pagination-link pagination-prev paginatio-disabled">Назад</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link pagination-curent">1</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link paginatio-disabled">...</a>
+            </li>
+            <li class="pagination-item">
+                <a class="pagination-link" href="#">15</a>
+            <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">Вперед</a>
+            </li>
+
+        </ul>
+      </section>
+
+    </main>
+
+    <!--Подвал сайта-->
+    <footer class="page-footer">
+
+        <h2 class="visually-hidden">Подвал сайта</h2>
+
+        <div class="footer-contacts">
+          <img class="footer-logo" src="#" alt="Логотип магазина Девайс">
+          <address class="contacts-adress">
+            <p>
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
+          </address>
+        </div>
+
+        <div class="footer-links">
+          <ul class="footer-links-list">
+            <li class="footer-links-item">
+              <a class="footer-links-link" href="#'">Доставка</a>
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-links-link" href="#'">Гарантия</a>
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-links-link" href="#'">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button-social" href="https://t.me/htmlacademy">
+                <img src="#">
+                <span class="visually-hidden">Telegram</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button-social" href="https://twitter.com/htmlacademy_ru">
+                <img src="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-call-back">
+          <address class="contacts-adress-footer">
+            <p>
+              <a class="contact-phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </p>
+          </address>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="htmlacademy-logo-footer" src="#" alt="Сделанно в HTMLAcademy">
+          </a>>
+        </div>
+
+      </footer>
+
+  </body>
+</html>
