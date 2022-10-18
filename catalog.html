@@ -15,10 +15,12 @@
           </a>
 
         <!--2. ПОИСК ПО САЙТУ-->
-        <form action="#" method="get">
-          <input class="search-form" type="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">Найти</button>
-        </form>
+      <form class="search-form" action="#" method="get">
+        <label class="visually-hidden" for="search-in-header">Поиск по сайту</label>
+        <input class="search-input" type="search" id="search-in-header" placeholder="Поиск по сайту">
+
+        <button class="search-button" type="submit">Найти</button>
+      </form>
 
         <!--3. СЕРВИСНОЕ МЕНЮ-->
         Сервисное меню
@@ -39,7 +41,7 @@
         <!--4. ГЛАВНОЕ МЕНЮ-->
         <nav class="main-menu">                                                                  <!--Это втотой тег nav - Уже для навигации по Главному меню. Вохможно надо было все обернуть в тег nav, как писал в пред. комменте-->
           Главное меню
-          <div>                                                                                  <!--Возможно лишний DIV???-->
+          <div class="main-menu-container">                                                                                  <!--Возможно лишний DIV???-->
             <ul class="main-menu-list">
               <!--Меню Каталога продукции-->
               <li class="main-menu-item">
@@ -103,7 +105,7 @@
       <!--Фильтр в левом боковом меню + Сортировка-->
       <section class="left-sitebar">
 
-        <h2>Фильтр:</h2>
+        <h2 class="catalog-filter-title">Фильтр:</h2>
         <form class="catalog-filter" > <!--Шторка с Ценой-->
             <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
@@ -115,7 +117,7 @@
 
             <fieldset class="catalog-filter-group"> <!--Чекбокс с цветом-->
                 <legend class="catalog-filter-title">Цвет</legend>
-                <ul>
+                <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                         <label class="control">
                             <input class="control-input" type="checkbox" checked name="black">Черный
@@ -146,7 +148,7 @@
 
             <fieldset class="catalog-filter-group"> <!--Рабиобатн с Bluetooth-->
                 <legend class="catalog-filter-title">Bluetooth</legend>
-                <ul>
+                <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                         <label class="control">
                             <input class="control-input" type="radio" name="bluetooth" checked value="yes">Есть
@@ -163,8 +165,8 @@
         </form>
 
 
-        <h2>Сортировка:</h2>
-        <select class="selext-control" aria-label="Сортировка по типу свойства товара">
+        <h2 class="sorting-goods-title">Сортировка:</h2>
+        <select class="seleсt-control" aria-label="Сортировка по типу свойства товара">
             <option value="popular">Популярные</option>
         </select>
 
@@ -176,7 +178,7 @@
       </section>
 
       <!--Карточки товаров-->
-      <section class="pruduct-all-cards">
+      <section class="product-all-cards">
         <h2 class="visually-hidden">Перечень товаров</h2>
         <ul class="product-list">
             <li class="product-card">
@@ -253,7 +255,7 @@
         <div class="footer-contacts">
           <img class="footer-logo" src="#" alt="Логотип магазина Девайс">
           <address class="contacts-adress">
-            <p>
+            <p class="normal-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
           </address>
@@ -274,19 +276,19 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button-social" href="https://t.me/htmlacademy">
-                <img src="#">
+                <img src="#" alt="Telegram HTML-академии">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="#">
+                <img src="#" alt="Youtube HTML-академии">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="button-social" href="https://twitter.com/htmlacademy_ru">
-                <img src="#">
+                <img src="#" alt="Twiter HTML-академии">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
@@ -295,7 +297,7 @@
 
         <div class="footer-call-back">
           <address class="contacts-adress-footer">
-            <p>
+            <p class="normal-text">
               <a class="contact-phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </p>
           </address>
